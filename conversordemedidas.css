@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header {
+    font: normal 35px Arial;
+}
+section {
+    background-color: white;
+    color: black;
+    margin-right: 300px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+p#res{
+    font: normal 20px Arial;
+}
+input#botaovoltar{
+    display: none;
+    margin: auto;
+}
+footer {
+    font: normal 15px Arial;
+    font-style: italic;
+}

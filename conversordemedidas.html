@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="styleconversor.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Temperaturas</h1>
+    </header>
+    <section>
+        <div id="divsuperior">
+            <div id="divcelsius">
+                <h2>Celsius</h2>
+                <p>Digite o valor que você quer converter</p>
+                <input type="number" name="txtcelsius" id="valorcelsius"><br><br>
+                <input type="button" value="Celsius para Fahrenheit" onclick="celfar()">
+                <input type="button" value="Celsius para Kelvin" onclick="celkelv()">
+            </div>
+            <div id="divfahrenheit">
+                <h2>Farenheit</h2>
+                <input type="number" name="txtfahrenheit" id="valorfahrenheit"><br><br>
+                <input type="button" value="Fahrenheit para Celsius" onclick="farcel()">
+                <input type="button" value="Fahrenheit para Kelvin" onclick="farkelv()">
+            </div>
+            <div id="divkelvin">
+                <h2>Kelvin</h2>
+                <input type="number" name="txtkelvin" id="valorkelvin"><br><br>
+                <input type="button" value="Kelvin para Celsius" onclick="kelvcel()">
+                <input type="button" value="Kelvin para Fahrenheit" onclick="kelvfar()">
+            </div>
+        </div><br>
+        <div id="divinferior">
+            <input type="button" value="Voltar" id="botaovoltar" onclick="voltar()">
+            <p id='res'>Resultado: </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Quick Solutions</p>
+    </footer>
+    <script src="scriptconversor.js"></script>
+</body>
+</html>
