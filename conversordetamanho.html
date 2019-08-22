@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversor de medidas de comprimento</title>
+    <link rel="stylesheet" href="conversordetamanho.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Tamanho</h1>
+    </header>
+    <section>
+        <div id="divsuperior">
+            <div id="divkm">
+                <h2>Kilometros</h2>
+                <p>Digite o valor que você quer converter</p>
+                <input type="text" name="txtkm" id="valorkm"><br><br>
+                <input type="button" value="Km para Metros" onclick="kmparametros()">
+                <input type="button" value="Km para Centímetros" onclick="kmparacm()">
+                <input type="button" value="Km para Milhas" onclick="kmparamilhas()">
+                <input type="button" value="Km para Pés" onclick="kmparapes()">
+                <input type="button" value="Km para Polegadas" onclick="kmparapol()">
+            </div>
+            <div id="divmetros">
+                <h2>Metros</h2>
+                <input type="text" name="txtmetros" id="valormetros"><br><br>
+                <input type="button" value="Metros para Km" onclick="metrosparakm()">
+                <input type="button" value="Metros para Centímetros" onclick="metrosparacm()">
+                <input type="button" value="Metros para Milhas" onclick="metrosparamilhas()">
+                <input type="button" value="Metros para Pés" onclick="metrosparapes()">
+                <input type="button" value="Metros para Polegadas" onclick="metrosparapol()">
+            </div>
+            <div id="divcentimetros">
+                <h2>Centímetros</h2>
+                <input type="text" name="txtcentimetros" id="valorcentimetros"><br><br>
+                <input type="button" value="Cm para Km" onclick="cmparakm()">
+                <input type="button" value="Cm para Metros" onclick="cmparametros()">
+                <input type="button" value="Cm para Milhas" onclick="cmparamilhas()">
+                <input type="button" value="Cm para Pés" onclick="cmparapes()">
+                <input type="button" value="Cm para Polegadas" onclick="cmparapol()">
+            </div>
+            <div id="divmilhas">
+                <h2>Milhas</h2>
+                <input type="text" name="txtmilhas" id="valormilhas"><br><br>
+                <input type="button" value="Milhas para Km" onclick="milhasparakm()">
+                <input type="button" value="Milhas para Metros" onclick="milhasparametros()">
+                <input type="button" value="Milhas para Centímetros" onclick="milhasparacm()">
+                <input type="button" value="Milhas para Pés" onclick="milhasparapes()">
+                <input type="button" value="Milhas para Polegadas" onclick="milhasparapol()">
+            </div>
+            <div id="divpes">
+                <h2>Pés</h2>
+                <input type="text" name="txtpes" id="valorpes"><br><br>
+                <input type="button" value="Pés para Km" onclick="pesparakm()">
+                <input type="button" value="Pés para Metros" onclick="pesparametros()">
+                <input type="button" value="Pés para Centímetros" onclick="pesparacm()">
+                <input type="button" value="Pés para Milhas" onclick="pesparamilhas()">
+                <input type="button" value="Pés para Polegadas" onclick="pesparapol()">
+            </div>
+            <div id="divpolegadas">
+                <h2>Polegadas</h2>
+                <input type="text" name="txtpolegadas" id="valorpolegadas"><br><br>
+                <input type="button" value="Pol para Km" onclick="polparakm()">
+                <input type="button" value="Pol para Metros" onclick="polparametros()">
+                <input type="button" value="Pol para Centímetros" onclick="polparacm()">
+                <input type="button" value="Pol para Milhas" onclick="polparamilhas()">
+                <input type="button" value="Pol para Pés" onclick="polparapes()">
+            </div>
+        </div><br>
+        <div id="divinferior">
+            <input type="button" value="Voltar" id="botaovoltar" onclick="voltar()"><br>
+            <p id="res">Resultado:</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Quick Solutions</p>
+    </footer>
+    <script src="conversordetamanho.js"></script>
+</body>
+</html>
