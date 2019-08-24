@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header {
+    font: normal 35px Arial;.
+}
+
+section  {
+    background-color: white;
+    color: black;
+    margin-right: 300px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+
+h2{
+    font: normal 40px Verdana;
+}
+
+button#botaoconversortamanho{
+    font: normal 30px Arial;
+}
+button#botaoconversormedidas{
+    font: normal 30px Arial;
+    margin-bottom: 30px;
+}
