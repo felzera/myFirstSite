@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversor de Números cardiais para romanos.</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgba(46, 3, 3, 0.918);
+            color: white;
+            font: normal 30px Calibri
+        }
+        section{
+            background: white;
+            color: black;
+            font: normal 20px Calibri;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Números Romanos</h1>
+    </header>
+    <section>
+        <div>
+            <p>Digite o número que você quer converter: </p>
+            <input type="text" name="txtnumer" id="numimput">
+            <input type="button" value="Converter" id="botconverter" onclick='convertnum()'>
+        </div>
+        <div>
+            <p id="res">Resultado: </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; QuickSolutions</p>
+    </footer>
+    <script>
+        var numimput = document.querySelector('input#numimput')
+        var res = document.querySelector('p#res')
+        function convertnum() {
+            let num = (numimput.value)
+            if (num.length == 0) {
+                alert('[ERRO] Número inexistente ou inválido!')
+                } else if (num.length == 1) {
+                    if (num.charAt('0') == 1){
+                        let num1 = num.replace("1", "I")
+                        res.innerHTML = num1
+                    }
+                    if (num.charAt('0') == 2){
+                        let num1 = num.replace("2", "II")
+                        res.innerHTML = num1
+                    }
+                    if (num.charAt('0') == 3){
+                        let num1 = num.replace("3", "III")
+                        res.innerHTML = num1
+                    }
+                    if (num.charAt('0') == 4){
+                        let num1 = num.replace("4", "IV")
+                        res.innerHTML = num1
+                    }
+                    if (num.charAt('0') == 5){
+                        let num1 = num.replace("5", "V")
+                        res.innerHTML = num1
+                    }
+                    if (num.charAt('0') == 6){
+                        let num1 = num.replace("6", "VI")
+                        res.innerHTML = num1
+                    }
+                    if (num.charAt('0') == 7){
+                        let num1 = num.replace("7", "VII")
+                        res.innerHTML = num1
+                    }
+                    if (num.charAt('0') == 8){
+                        let num1 = num.replace("8", "VIII")
+                        res.innerHTML = num1
+                    }
+                    if (num.charAt('0') == 9){
+                        let num1 = num.replace("9", "IX")
+                        res.innerHTML = num1
+                    }
+                }
+        }
+    </script>
+</body>
+</html>
